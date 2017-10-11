@@ -1,19 +1,35 @@
-extends layouts/app.pug
-block title
-	title Стартовый шаблон для вёрстки
-block content
-	.row.margin
-		article#article.large-8.columns
-			hr
-			h1 #{hello} #{name}
-			hr
-			.vidos
-				.callout.success.rip
-					.responsive-embed
-						iframe(src='https://www.youtube.com/embed/wFKBN3MGUGI?showinfo=0&autoplay=1&rel=0&start=96', frameborder='0', allowfullscreen)
-			hr
-			h5 Картинка для проверки роботоспособности
-			hr
-			img(src="images/pro.jpg" alt="gulp" title="starter-mini-gulp").img-responsive
-			hr
-		include include/sidebar.pug
+doctype html
+html
+	head
+	include layouts/head.pug
+	body
+		header.header.animatedParent
+			.header__top.animated.fadeInDownShort
+				include layouts/header_top.pug
+			.header__middle.animated.growIn
+				include layouts/header_middle.pug
+			.header__bottom.animated.fadeInUpShort
+				include layouts/header_bottom.pug
+		header.header-mobile.animatedParent
+			include layouts/header_mobile.pug
+		main.main
+			.container
+				.row
+					.column.xs-12
+						include layouts/intro.pug
+						include layouts/services.pug
+			include layouts/directions.pug
+			include layouts/actions.pug
+			include layouts/news.pug
+			include layouts/brands.pug
+			include layouts/subscribe.pug
+		footer.footer
+			.container
+				.row
+					.column.xs-12
+						.box
+							include layouts/footer_top.pug
+							include layouts/footer_bottom.pug
+
+	script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+	script(src='javascript/app.min.js')

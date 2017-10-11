@@ -1,0 +1,35 @@
+.container
+	.row.row--auto.valign-middle.align-justify
+		.column
+			a.logo
+				img(src='images/logo.png')
+		.column
+			form.header__search
+				input(type='search', placeholder='Поиск товара')
+
+		.column
+			.schedule
+				b.icon-clock
+				div.schedule__content
+					.box.xs-text-left.lg-text-right
+						p.schedule__line Пн. - Чт.: 9.30 - 18.00 
+						p.schedule__line Пт.: 9.30 - 17.00
+		.column
+			.phone
+				b.icon-phone
+				div.phone__content
+					.box
+						p.phone__line 
+							strong
+								a(href='tel:+7 (495) 771-75-39') +7 (495) 771-75-39 
+						p.pnone__line 
+							a(href='#modal')
+								small Заказать обратный звонок
+		.column
+			.basket(data-cost='1')
+				b.icon-basket
+				div.basket__content
+					.box
+						a.basket__link(href='basket.html')
+							| 23 989
+							span.rouble р
