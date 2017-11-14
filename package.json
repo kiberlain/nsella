@@ -1,5 +1,5 @@
 {
-  "name": "start",
+  "name": "nsella",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dzmitROCK/start.git"
+    "url": "git+https://github.com/kiberlain/nsella"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dzmitROCK/start/issues"
+    "url": "https://github.com/kiberlain/nsella/issues"
   },
-  "homepage": "https://github.com/dzmitROCK/start#readme",
+  "homepage": "https://github.com/kiberlain/nsella/",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "del": "^2.2.2",
