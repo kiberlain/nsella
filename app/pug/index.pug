@@ -31,5 +31,15 @@ html
 							include layouts/footer_top.pug
 							include layouts/footer_bottom.pug
 
+		include layouts/modals.pug
+
+
+
 	script(src='https://code.jquery.com/jquery-3.2.1.min.js')
-	script(src='javascript/app.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js')
+	script.
+		$.validate({
+			lang: 'ru'
+		});
+
+	script(src='javascript/app.min.js') 

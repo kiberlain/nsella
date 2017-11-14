@@ -1,0 +1,40 @@
+.map#map
+	.container
+		h2.title.title--decorated Схема проезда
+	.map__wrapper
+		
+
+
+		.map__item.map__item.is-active#map_moscow
+		.map__item#map_piter
+		script(src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js", integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==", crossorigin="")
+		script.
+
+			var mapicon = L.icon({
+			    iconUrl: 'images/map-marker.png',
+			    iconSize:     [54, 68],
+			    iconAnchor:   [22, 94],
+			    popupAnchor:  [-3, -100] 
+			});
+			var map_moscow = L.map('map_moscow', {scrollWheelZoom : false}).setView([55.9033566,37.436222], 14);
+			map_moscow.scrollWheelZoom.disable();
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			    attribution: 'Схема проезда'
+			}).addTo(map_moscow);
+
+			L.marker([55.9033566,37.436222], {icon: mapicon}).addTo(map_moscow)
+			    .bindPopup('<img src="images/map-logo.png">')
+			    .openPopup();
+
+
+			var map_piter = L.map('map_piter', {scrollWheelZoom : false}).setView([60.0003179,30.2565891], 14);
+			map_piter.scrollWheelZoom.disable();
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			    attribution: 'Схема проезда'
+			}).addTo(map_piter);
+
+			L.marker([60.0003179,30.2565891], {icon: mapicon}).addTo(map_piter)
+			    .bindPopup('<img src="images/map-logo.png">')
+			    .openPopup();
+
+

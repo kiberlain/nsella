@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+	include layouts/head.pug
+	body
+		header.header.animatedParent
+			.header__top.animated.fadeInDownShort
+				include layouts/header_top.pug
+			.header__middle.animated.growIn
+				include layouts/header_middle.pug
+			.header__bottom.animated.fadeInUpShort
+				include layouts/header_bottom.pug
+		header.header-mobile.animatedParent
+			include layouts/header_mobile.pug
+		main.main
+			include layouts/breadcrumbs.pug
+			include layouts/manufacturer.pug
+			include layouts/subscribe.pug
+		footer.footer
+			.container
+				.row
+					.column.xs-12
+						.box
+							include layouts/footer_top.pug
+							include layouts/footer_bottom.pug
+
+		include layouts/modals.pug
+
+
+	script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js')
+	script(src='javascript/app.min.js') 

@@ -1,0 +1,107 @@
+#auth(style='display: none;')
+	.modal__body
+		h3 Авторизация
+		p 
+		form.modal-form
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-5
+					label Email или телефон:
+				.column.xs-12.sm-12.md-7
+					input(type='text', placeholder='Введите email или телефон', data-validation="length alphanumeric", data-validation-length="min4", required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-5
+					label Пароль:
+				.column.xs-12.sm-12.md-7
+					input(type='password', placeholder='Введите пароль', data-validation="length alphanumeric", data-validation-length="min1", required)
+			.modal-form__row.row
+				.column.xs-12
+					button.btn.btn--default Войти
+
+
+#registration(style='display: none;')
+	.modal__body
+		h3 Регистрация нового пользователя
+		p 
+		form.modal-form
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label ФИО:
+				.column.xs-12.sm-12.md-10
+					input(type='text', placeholder='Введите ФИО', data-validation="length alphanumeric", data-validation-length="min4", required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label Телефон:
+				.column.xs-12.sm-12.md-10
+					input(type='tel', placeholder='Введите ваш контактный телефон', required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label E-mail:
+				.column.xs-12.sm-12.md-10
+					input(type='email', data-validation="email", placeholder='Введите вашу почту', required)
+			.modal-form__row.row
+				.column.xs-12
+					img(src='images/recaptcha.png')
+			.modal-form__row.row
+				.column.xs-12
+					small 
+						| Нажимая кнопку "Зарегистрироваться" вы автоматически соглашаетесь <br>с "
+						a(href='politika_konfidenczialnosti.html') Политикой обработки конфиденциальных данных
+						| "
+
+
+			.modal-form__row.row
+				.column.xs-12
+					button.btn.btn--default Зарегистрироваться
+
+#call(style='display: none;')
+	.modal__body
+		h3 Заказать обратный звонок
+		form.modal-form
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label Ваше:
+				.column.xs-12.sm-12.md-10
+					input(type='text', placeholder='Введите ваше имя', data-validation="length alphanumeric", data-validation-length="min4", required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label Телефон:
+				.column.xs-12.sm-12.md-10
+					input(type='tel', placeholder='Введите ваш контактный телефон', required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label E-mail:
+				.column.xs-12.sm-12.md-10
+					input(type='email', data-validation="email", placeholder='Введите вашу почту', required)
+			.modal-form__row.row
+				.column.xs-12
+					img(src='images/recaptcha.png')
+			.modal-form__row.row
+				.column.xs-12
+					button.btn.btn--default Заказать
+
+#seminar(style='display: none;')
+	.modal__body
+		h3 Записаться на участие в семинаре
+		p Семинар  Салыгиной Екатерины : "Правовой ликбез для администратора стоматологической клиники: образованный администратор как реальная правовая защита".
+		form.modal-form
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label ФИО:
+				.column.xs-12.sm-12.md-10
+					input(type='text', placeholder='Введите ФИО', data-validation="length alphanumeric", data-validation-length="min4",  required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label Телефон:
+				.column.xs-12.sm-12.md-10
+					input(type='tel', placeholder='Введите ваш контактный телефон', required)
+			.modal-form__row.row
+				.column.xs-12.sm-12.md-2
+					label E-mail:
+				.column.xs-12.sm-12.md-10
+					input(type='email', data-validation="email", placeholder='Введите вашу почту', required)
+			.modal-form__row.row
+				.column.xs-12
+					img(src='images/recaptcha.png')
+			.modal-form__row.row
+				.column.xs-12
+					button.btn.btn--default Записаться

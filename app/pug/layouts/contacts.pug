@@ -1,0 +1,133 @@
+link(rel="stylesheet", type="text/css", href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==", crossorigin="")
+
+.container
+	h1.title.title--decorated Контакты
+	.contacts
+		.row.align-center
+			.column.xs-12.sm-12.md-11.lg-10
+				
+					header.contacts__header 
+						a.contacts__tab.is-active Москва
+						a.contacts__tab Санкт-Петербург
+					.contacts__body
+						.contacts__item.is-active
+							section.contacts__section
+								.row
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-phone
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='tel:84957717539') +7 (495) 771-75-39 
+													p.contacts__p
+														a.contacts__link(href='tel:84957833310') +7 (495) 783-33-10 
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-location
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='https://www.google.ru/maps/place/%D0%92%D0%BE%D0%BB%D0%BE%D1%87%D0%B0%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0,+12%D0%90%D1%811,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+111033/@55.756006,37.6797823,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a970bf219cd:0x5d0f620b03a0800a!8m2!3d55.756003!4d37.681971', target='_blanc') 111033, Москва, улица Волочаевская,  дом 12А, строение 1   
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-mail
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='mailto:manager@nsella.ru') manager@nsella.ru
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-clock
+												.contacts__description
+													p.contacts__p 9.30 - 18.00 (понедельник - четверг)
+													p.contacts__p 9.30 - 17.00 (пятница)
+							section.contacts__section
+								h2.contacts__title Описание проезда 
+								ul.contacts__list
+									li.contacts__info
+										h3.contacts__subtitle От станции метро «Площадь Ильича», «Римская»: 
+										p.contacts__metro Cо станции метро «Площадь Ильича» – из стеклянных дверей повернуть направо и подняться на улицу;  со станции метро «Римская» – из стеклянных дверей идти прямо, по направлению к выходу станция метро «Площадь Ильича», никуда не сворачивая. Следуйте указателям на улицу Золоторожская, Золоторожский вал.  Транспортом можно доехать на автобусе №125, 730  до остановки «Волочаевская улица, дом 12А». Если Вы пойдете пешком, то вам нужно пройти прямо  через  подземный переход (под ж\д платформой «Серп и молот»). Из перехода поверните налево и пройдите до Среднего Золоторожского переулка, поверните в него и идите прямо (держитесь левее).  На перекрестке с улицей Волочаевской сверните направо и идите по ней примерно 7 минут до магазина «Перекресток».  Здание магазина «Перекресток» Вам нужно обойти с обратной стороны, там будет бежевое крыльцо и дверь с табличкой «Н.Селла».  От метро «Бауманская»: Вы можете доехать на трамвае №45 (движение в сторону Лефортово), на микроавтобусе №425 до остановки «Волочаевская улица, дом 12А». Перед вами будет магазин «Перекресток». Обойдите его с обратной стороны. Там вы увидите бежевое крыльцо и дверь с табличкой «Н.Селла».  
+										.contacts__metro-footer
+											a.contacts__metro-link
+												b.icon-scroll-down
+							section.contacts__section
+								h2.contacts__title Склад
+								ul.contacts__list
+									li.contacts__info 
+										span Адрес:
+										address.contacts__address Московская область, г. Химки, ул. Рабочая, д.19
+									li.contacts__info 
+										p Время отгрузки крупногабаритного оборудования: понедельник – четверг 11.00 до 13.00, 13.00 до 16.00,  в пятницу до 15.00
+										p 
+											a.contacts__map.contacts__moscow Посмотреть на карте
+								.contacts__hidden-map#map_moscow2_modal(style='display: none;')
+									h4 111033, Москва, улица Волочаевская,  дом 12А, строение 1
+									.contacts__hidden-map#map_moscow2
+
+						.contacts__item
+							section.contacts__section
+								.row
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-phone
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='tel:84957717539') +7 (495) 771-75-39 
+													p.contacts__p
+														a.contacts__link(href='tel:84957833310') +7 (495) 783-33-10 
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-location
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='https://www.google.ru/maps/place/%D0%92%D0%BE%D0%BB%D0%BE%D1%87%D0%B0%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0,+12%D0%90%D1%811,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+111033/@55.756006,37.6797823,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a970bf219cd:0x5d0f620b03a0800a!8m2!3d55.756003!4d37.681971', target='_blanc') 111033, Санкт-Петербург, улица Гаккелевская,  дом 12А, строение 1   
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-mail
+												.contacts__description
+													p.contacts__p
+														a.contacts__link(href='mailto:manager@nsella.ru') manager@nsella.ru
+									.column.xs-12.sm-12.md-6
+										.box
+											.contacts__block
+												.contacts__icon-wrapper 
+													b.icon-clock
+												.contacts__description
+													p.contacts__p 9.30 - 18.00 (понедельник - четверг)
+													p.contacts__p 9.30 - 17.00 (пятница)
+							section.contacts__section
+								h2.contacts__title Описание проезда 
+								ul.contacts__list
+									li.contacts__info
+										h3.contacts__subtitle От станции метро «Римская», «Площадь Ильича»: 
+										p.contacts__metro Следуйте указателям на улицу Золоторожская, Золоторожский вал.  Транспортом можно доехать на автобусе №125, 730  до остановки «Волочаевская улица, дом 12А». Если Вы пойдете пешком, то вам нужно пройти прямо  через  подземный переход (под ж\д платформой «Серп и молот»). Из перехода поверните налево и пройдите до Среднего Золоторожского переулка, поверните в него и идите прямо (держитесь левее).  На перекрестке с улицей Волочаевской сверните направо и идите по ней примерно 7 минут до магазина «Перекресток».  Здание магазина «Перекресток» Вам нужно обойти с обратной стороны, там будет бежевое крыльцо и дверь с табличкой «Н.Селла».  От метро «Бауманская»: Вы можете доехать на трамвае №45 (движение в сторону Лефортово), на микроавтобусе №425 до остановки «Волочаевская улица, дом 12А». Перед вами будет магазин «Перекресток». Обойдите его с обратной стороны. Там вы увидите бежевое крыльцо и дверь с табличкой «Н.Селла».
+										.contacts__metro-footer
+											a.contacts__metro-link
+												b.icon-scroll-down
+							section.contacts__section
+								h2.contacts__title Склад
+								ul.contacts__list
+									li.contacts__info
+										span Адрес:
+										address.contacts__address Ленинградская область, г. Химки, ул. Рабочая, д.19
+									li.contacts__info 
+										p Время отгрузки крупногабаритного оборудования: понедельник – четверг 11.00 до 13.00, 13.00 до 16.00,  в пятницу до 15.00
+										p 
+											a.contacts__map.contacts__piter Посмотреть на карте
+								.contacts__hidden-map#map_piter2_modal(style='display: none;')
+									h4 Ещё какой-то питерский адрес
+									#map_piter2
+
+						script(src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js", integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==", crossorigin="")

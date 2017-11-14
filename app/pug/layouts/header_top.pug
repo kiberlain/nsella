@@ -3,13 +3,13 @@
 		.column.xs-12
 			.box
 				.row
-					.column.xs-12.sm-6.md-7.lg-9
+					.column.xs-12.sm-6.md-8.lg-9
 						nav.nav
 							ul.nav__list
 								li.nav__item
 									a.nav__link(href='') О компании
 								li.nav__item
-									a.nav__link(href='') Доставка и оплата
+									a.nav__link.is-active(href='') Доставка и оплата
 								li.nav__item
 									a.nav__link(href='') Сервисный центр
 								li.nav__item
@@ -18,13 +18,13 @@
 									a.nav__link(href='') Медиа
 								li.nav__item
 									a.nav__link(href='') Производители
-					.column.xs-12.sm-6.md-5.lg-3
+					.column.xs-12.sm-6.md-4.lg-3
 						.sm-text-left.md-text-right.lg-text-right
 							.auth
 								b.icon-user
-								a.auth__link Войти
+								a.auth__link(data-fancybox="auth", data-src="#auth", href="javascript:;") Войти
 								span.auth__divider |
-								a.auth__link Регистрация
+								a.auth__link(data-fancybox="registration", data-src="#registration", href="javascript:;") Регистрация
 
 
 

@@ -1,0 +1,110 @@
+h1.title.title--decorated.title--store Вызов инженера
+
+.engineer-call
+	form.engineer-call__form(action='')
+		section.engineer-call__section
+			.row.align-justify
+				.column.xs-12.sm-6.md-6
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label Фамилия:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='text', placeholder='Введите вашу фамилию')
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label Имя:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='text', placeholder='Введите ваше имя')
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label Отчество:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='text', placeholder='Введите ваше отчество')
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label Адрес:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='text', placeholder='Введите ваш адрес')
+				.column.xs-12.sm-6.md-5
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label Телефон:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='tel', placeholder='Введите ваш контактный телефон')
+					.engineer-call__row
+						.row.valign-middle
+							.column.xs-12.sm-4
+								label.engineer-call__label E-mail:
+							.column.xs-12.sm-8
+								input.engineer-call__textinput(type='email', placeholder='Введите вашу почту')
+					.engineer-call__row
+						.row
+							.column.xs-12.sm-4
+								label.engineer-call__label Вид оплаты:
+							.column.xs-12.sm-8
+								p 
+									label.engineer-call__label.engineer-call__label--checkboxes
+										input(type='checkbox')
+										span.engineer-call__forcheckbox безналичный расчет
+
+								p 
+									label.engineer-call__label.engineer-call__label--checkboxes
+										input(type='checkbox')
+										span.engineer-call__forcheckbox наличный расчет
+		section.engineer-call__section
+			table.engineer-call__table
+				thead.engineer-call__thead
+					tr.engineer-call__tr
+						th.engineer-call__th №
+						th.engineer-call__th Наименование стоматологического оборудования
+						th.engineer-call__th № кабинета
+						th.engineer-call__th Описание неисправности
+				tbody.engineer-call__tbody
+					tr.engineer-call__tr
+						td.engineer-call__td(data-title='№')
+							strong.engineer-call__num 1.
+						td.engineer-call__td(data-title='Наименование стоматологического оборудования')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='№ кабинета')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='Описание неисправности')
+							input.engineer-call__textinput(type='text')
+					tr.engineer-call__tr
+						td.engineer-call__td(data-title='№')
+							strong.engineer-call__num 2.
+						td.engineer-call__td(data-title='Наименование стоматологического оборудования')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='№ кабинета')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='Описание неисправности')
+							input.engineer-call__textinput(type='text')
+					tr.engineer-call__tr
+						td.engineer-call__td(data-title='№')
+							strong.engineer-call__num 3.
+						td.engineer-call__td(data-title='Наименование стоматологического оборудования')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='№ кабинета')
+							input.engineer-call__textinput(type='text')
+						td.engineer-call__td(data-title='Описание неисправности')
+							input.engineer-call__textinput(type='text')
+				tfoot.engineer-call__tfoot
+					tr.engineer-call__tr
+						td.engineer-call__tfoot-td
+						td.engineer-call__tfoot-td(colspan='3')
+							a.btn.btn--addrow ДОБАВИТЬ СТРОКУ +
+
+		section.engineer-call__section
+			.row.align-justify.valign-bottom
+				.column.xs-12.sm-6.md-7
+					label.engineer-call__label Дополнительная информация:
+					textarea.engineer-call__textarea
+				.column.xs-12.sm-6.md-4
+					h2 I'm not a robot
+					a.btn.btn--default ОТПРАВИТЬ ЗАЯВКУ
+
+
